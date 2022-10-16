@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ramicreads</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <p class="brand">ramicreads</p>
+      <div class="headericons">
+        <i id="airplane"></i>
+        <i id="wifi" class="fa-solid fa-wifi"></i>
+        <p>70%</p>
+        <i class="fa-solid fa-battery-three-quarters battery"></i>
+        <p class="time">
+          <span id="hours">12</span>:<span id="minutes">51</span>
+          <span id="session">AM</span>
+        </p>
+      </div>
+    </header>
+    <hr />
+    <div class="topbuttons">
+      <button id="home">
+        <a href="index.html">
+          <i class="fa-sharp fa-solid fa-house-chimney"></i>
+          <p>home</p>
+        </a>
+      </button>
+      <button id="back" onclick="history.go(-1)">
+        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        <p>back</p>
+      </button>
+      <button id="darkmode">
+        <i class="fa-solid fa-moon"></i>
+        <p>dark mode</p>
+      </button>
+      <button id="brightness">
+        <i class="fa-sharp fa-solid fa-lightbulb"></i>
+        <p>brightness</p>
+      </button>
+      <button id="airplanemode" onclick="toggleAirplaneMode()">
+        <i class="fa-solid fa-plane"></i>
+        <p>airplane mode</p>
+      </button>
+    </div>
+    <hr class="bottom" />
+    <div class="books">
+      <a href=""><img src="./images/IMG_0923.JPG" /></a>
+      <a href=""><img src="./images/IMG_0924.JPG" /></a>
+      <a href=""><img src="./images/IMG_0925.JPG" /></a>
+      <a href=""><img src="./images/IMG_0926.WEBP" /></a>
+      <a href=""><img src="./images/IMG_0927.JPG" /></a>
+      <a href=""><img src="./images/IMG_0928.JPG" /></a>
+      <a href=""><img src="./images/IMG_0929.JPG" /></a>
+      <a href=""><img src="./images/IMG_0930.JPG" /></a>
+      <a href=""><img src="./images/IMG_0931.JPG" /></a>
+      <a href=""><img src="./images/IMG_0932.WEBP" /></a>
+      <a href=""><img src="./images/IMG_0933.JPG" /></a>
+      <a href=""><img src="./images/IMG_0935.JPG" /></a>
+    </div>
+  </body>
+</html>

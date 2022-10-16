@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+:root {
+  --beige: #f5f5f3;
+  --black: #0a0a0c;
+  --hover: #dadada;
+  transition: all 0.5s ease;
+}
+
+.darktheme {
+  --beige: #0a0a0c;
+  --black: #f5f5f3;
+  --hover: #313130;
+  transition: all 0.5s ease;
+}
+
+.dim {
+  filter: brightness(50%);
+  transition: all 0.5s ease;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--beige);
+  transition: all 0.5s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--black);
+  font-family: "Literata";
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.brand {
+  margin-left: 1.063rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.headericons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.headericons > i,
+.headericons > p {
+  margin-right: 5px;
+}
+
+.headericons p {
+  margin-top: 0.001rem;
+  margin-bottom: 0;
+}
+
+.battery {
+  font-size: 23px;
+}
+
+.headericons i {
+  margin-right: 0.5rem;
+}
+
+hr {
+  margin-bottom: 0rem;
+  transition: all 0.5s ease;
+}
+
+.topbuttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 0;
+}
+
+.topbuttons p {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--black);
+}
+
+.topbuttons i {
+  font-size: 25px;
+  margin-top: 0.25rem;
+  color: var(--black);
+}
+
+.topbuttons button {
+  border: none;
+  outline: none;
+  background-color: var(--beige);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.topbuttons button:hover {
+  background-color: var(--hover);
+}
+
+.bottom {
+  margin-top: 0rem;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 21px;
+  justify-self: center;
+  margin: 20px;
+}
+.books img {
+  width: 9.5rem;
+  height: 14.5rem;
+  filter: grayscale(100%);
+  border: 1px solid var(--black);
+  transition: all 0.5s ease;
+}
+
+.books a {
+  margin: auto;
+}
+
+.books a:hover {
+  transform: scale(1.05);
+}
+
+#airplanemode p {
+  font-size: 10.25px;
+}
+
+#home a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+  .books {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+  }
+
+  .books img {
+    width: 12rem;
+    height: 17.5rem;
+  }
+
+  #airplanemode p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .books {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+  }
+
+  .books img {
+    width: 14rem;
+    height: 20rem;
+  }
+
+  #airplanemode p {
+    font-size: 12px;
+  }
+}
